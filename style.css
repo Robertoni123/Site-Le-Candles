@@ -1,0 +1,97 @@
+body{
+    color: rgba(255, 255, 255, 0.877);
+    background:linear-gradient(#fcf7ef, rgb(175, 148, 108)) no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+.nav{
+    color: rgba(219, 228, 236, 0.918);
+    text-decoration: none;
+    background:linear-gradient(0.25turn,#ebdfce, #bda67b) no-repeat;
+    border-radius: 10px;
+    font-family: 'Merrieweather' serif;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+a{
+    text-decoration: none;
+    color:rgba(3, 3, 3, 0.966);
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+.img{
+display: flex;
+background:linear-gradient(white, rgb(175,148,108));
+flex-direction: row-reverse;
+border-radius: 10px;
+}
+.img img{
+    margin: 10px;
+  font-size: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(202, 107, 44);
+    
+}
+.img p{
+    font-family: 'Merriweather' serif;
+    font-style: italic;
+    color: #000000;
+    text-align:left;
+   padding: 50px;
+   font-size: large;
+
+}
+.velasft img{
+    height: 350px;
+    width: 350px;
+    justify-content: space-between;
+}
+.velasft{
+    background-color: #fdf0dc;
+    border-radius: 30px;
+}
+
+
+#contato {
+    padding: 50px;
+    background: linear-gradient(white, rgb(161, 134, 94));
+    color: #333;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 30px;
+
+  }
+  
+  .contato-info {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  
+  .info-item {
+    width: 30%;
+  }
+  
+  .info-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .info-item p {
+    font-size: 1em;
+    color: #555;
+  }
+ 
