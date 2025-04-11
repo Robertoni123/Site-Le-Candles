@@ -1,193 +1,164 @@
-/* Garante que tudo fique box-sizing: border-box */
-* 
-/* Resetando margens e padding para um layout limpo */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8; /* Fundo claro */
+  font-family: Arial, sans-serif; /* Fonte original */
+  background-color: #fff;
+  line-height: 1.5;
+  padding: 10px;
 }
 
 /* Estilo para a navbar */
 .navbar {
-    background-color: #D4C0A1; /* Cor bege suave */
-    padding: 15px 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #D4C0A1; /* Cor bege suave */
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #4E2A1C; /* Cor marrom escuro */
-    text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4E2A1C; /* Cor marrom escuro */
+  text-decoration: none;
 }
 
 .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar-links li {
-    display: inline;
+  display: inline;
 }
 
 .navbar-links a {
-    text-decoration: none;
-    color: #4E2A1C; /* Cor marrom escuro */
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 5px;
+  text-decoration: none;
+  color: #4E2A1C; /* Cor marrom escuro */
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
 }
 
+/* Hover da Navbar */
 .navbar-links a:hover {
-    background-color: #A17C57; /* Cor marrom suave ao passar o mouse */
-    color: #fff;
+  background-color: #A17C57; /* Cor marrom suave ao passar o mouse */
+  color: #fff;
 }
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
-    .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 
-    .navbar-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
+  .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+  }
 
-    .navbar-links a {
-        padding: 10px 15px;
-    }
+  .navbar-links a {
+      padding: 10px 15px;
+  }
 }
 
-
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    line-height: 1.5;
-    padding: 10px;
-  }
-  
-  .container, .acessorios, .choco {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  /* Estilo dos cards */
-  .card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    overflow: hidden;
-    max-width: 300px;
-    width: 100%;
-    min-width: 280px;
-    flex: 0 0 auto;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card-content {
-    padding: 15px;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .card-description {
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Menu de navegação */
-  .nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px 0;
-    background-color: #eee;
-  }
-  
-  .nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Seção de produtos com rolagem horizontal */
-  .choco-container, .acessorios-container {
+/* Seção de produtos com rolagem horizontal */
+.choco-container, .acessorios-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
-  }
-  
-  .choco, .acessorios {
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.choco, .acessorios {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
     gap: 20px;
-    padding: 20px;
-    scroll-snap-type: x mandatory;
     width: 100%;
-  }
-  
-  .choco::-webkit-scrollbar, .acessorios::-webkit-scrollbar {
+    scroll-snap-type: x mandatory;  /* Garante que os cards fiquem "presos" na rolagem */
+}
+
+.choco::-webkit-scrollbar, .acessorios::-webkit-scrollbar {
     height: 8px;
-  }
-  
-  .choco::-webkit-scrollbar-thumb, .acessorios::-webkit-scrollbar-thumb {
+}
+
+.choco::-webkit-scrollbar-thumb, .acessorios::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 4px;
-  }
-  
-  .card {
-    flex-shrink: 0;
-    scroll-snap-align: start; /* Garante que cada card começa no início da rolagem */
-  }
-  
-  
-  /* MEDIA QUERY: adapta para telas menores */
-  @media (max-width: 768px) {
+}
+
+/* Garantindo que os cards se ajustem corretamente */
+.card {
+    flex-shrink: 0; /* Evita que os cards encolham */
+    scroll-snap-align: start;  /* Garante que cada card comece no início da rolagem */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #d4af37; /* Dourado elegante */
+}
+
+/* MEDIA QUERY: adapta para telas menores */
+@media (max-width: 768px) {
     .choco, .acessorios {
-      gap: 10px;
-    }
-  
-    .card {
-      min-width: 200px; /* Ajusta o tamanho mínimo dos cards */
-      max-width: 250px;
-    }
-  
-    .choco-container, .acessorios-container {
-      width: 100%;
+        gap: 10px;
     }
 
-  }
-  
+    .card {
+        min-width: 200px; /* Ajusta o tamanho mínimo dos cards */
+        max-width: 250px;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+    }
+}
+

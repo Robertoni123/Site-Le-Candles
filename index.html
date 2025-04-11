@@ -20,6 +20,28 @@
             </ul>
         </div>
     </nav>
+    <button class="slide-btn prev" onclick="scrollSlide(-1)">&#8592;</button>
+    <header>
+    <div class="slide">
+        <img src="./img/slideprata.png" alt="Imagem de apresentação">
+        <img src="./img/slide.png" alt="">
+    </div>
+    <button class="slide-btn next" onclick="scrollSlide(1)">&#8594;</button>
+</header>
+    <script>
+        function scrollSlide(direction) {
+          const slideContainer = document.querySelector('.slide');
+          const scrollAmount = slideContainer.clientWidth;
+      
+          slideContainer.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+      </script>
+      
+
+
         <div class="img">
             <img src="./img/logo.png" alt="">
             <p>Na LeCandles, nossa paixão por velas aromáticas vai além da simples criação de produtos; buscamos transformar cada vela em uma verdadeira experiência sensorial. Especializados em velas de alta qualidade, utilizamos ingredientes premium, como cera vegetal e óleos essenciais cuidadosamente selecionados, para garantir uma queima limpa e prolongada, que realce a fragrância e proporcione momentos de relaxamento.
@@ -27,7 +49,9 @@
                 Cada vela é desenvolvida com dedicação, pensando no poder do aroma para elevar o ambiente, proporcionando aconchego, bem-estar e tranquilidade. Acreditamos que uma boa fragrância tem o poder de transformar o espaço, tornando-o mais acolhedor e criando uma atmosfera de calma e serenidade.</p>
         </div>
 
-        
+
+
+
 <div class="velasft">
     <ul>
         <li>
