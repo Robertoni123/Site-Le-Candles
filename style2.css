@@ -2,12 +2,13 @@ body {
   font-family: Arial, sans-serif; /* Fonte original */
   background-color: #fff;
   line-height: 1.5;
-  padding: 10px;
+  padding: 35px;
+  
 }
 
 /* Estilo para a navbar */
 .navbar {
-  background-color: #D4C0A1; /* Cor bege suave */
+  background-color: #D4C0A1; 
   padding: 15px 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -23,7 +24,7 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #4E2A1C; /* Cor marrom escuro */
+  color: #4E2A1C; 
   text-decoration: none;
 }
 
@@ -39,7 +40,7 @@ body {
 
 .navbar-links a {
   text-decoration: none;
-  color: #4E2A1C; /* Cor marrom escuro */
+  color: #4E2A1C; 
   font-size: 1.1rem;
   padding: 5px 10px;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -48,7 +49,7 @@ body {
 
 /* Hover da Navbar */
 .navbar-links a:hover {
-  background-color: #A17C57; /* Cor marrom suave ao passar o mouse */
+  background-color: #A17C57; 
   color: #fff;
 }
 
@@ -81,7 +82,7 @@ body {
     padding: 20px 0;
 }
 
-.choco, .acessorios {
+.choco, .acessorios, .outono {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
@@ -89,17 +90,19 @@ body {
     scroll-snap-type: x mandatory;  /* Garante que os cards fiquem "presos" na rolagem */
 }
 
-.choco::-webkit-scrollbar, .acessorios::-webkit-scrollbar {
+.choco::-webkit-scrollbar, .acessorios::-webkit-scrollbar, .outono::-webkit-scrollbar-thumb {
     height: 8px;
 }
 
-.choco::-webkit-scrollbar-thumb, .acessorios::-webkit-scrollbar-thumb {
+.choco::-webkit-scrollbar-thumb, .acessorios::-webkit-scrollbar-thumb, .outono::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 4px;
 }
 
 /* Garantindo que os cards se ajustem corretamente */
 .card {
+    padding: 20px;
+    padding-left: 20px;
     flex-shrink: 0; /* Evita que os cards encolham */
     scroll-snap-align: start;  /* Garante que cada card comece no início da rolagem */
     background-color: #f9f9f9;
@@ -119,6 +122,7 @@ body {
 
 .card-content {
     padding: 15px;
+
 }
 
 .card-title {
@@ -135,7 +139,7 @@ body {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border: 2px solid #d4af37; /* Dourado elegante */
+    border: 2px solid #d4af37; 
 }
 
 /* MEDIA QUERY: adapta para telas menores */
@@ -145,7 +149,7 @@ body {
     }
 
     .card {
-        min-width: 200px; /* Ajusta o tamanho mínimo dos cards */
+        min-width: 200px; 
         max-width: 250px;
     }
 

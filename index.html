@@ -27,48 +27,18 @@
         </div>
     </nav>
 
-    <!-- Cabeçalho com o slide de imagens -->
-    <header>
-        <button class="slide-btn prev" onclick="scrollSlide(-1)">&#8592;</button> <!-- Botão de slide para esquerda -->
-        <div class="slide"> <!-- Container do slide de imagens -->
-            <img src="./img/slideprata.png" alt="Imagem de apresentação">
-            <img src="./img/slide.png" alt="">
-        </div>
-        <button class="slide-btn next" onclick="scrollSlide(1)">&#8594;</button> <!-- Botão de slide para direita -->
-    </header>
 
-    <!-- Script para funcionamento do slide -->
-    <script>
-        function scrollSlide(direction) {
-            const slideContainer = document.querySelector('.slide');
-            const scrollAmount = slideContainer.clientWidth;
-
-            slideContainer.scrollBy({
-                left: direction * scrollAmount,
-                behavior: 'smooth'
-            });
-        }
-    </script>
 
     <!-- Seção com logo e descrição da empresa -->
     <div class="img" id="sobre"> <!-- Container com imagem e texto lateral -->
         <img src="./img/logo.png" alt="">
         <p>
-          Na LeCandles, nossa paixão por velas aromáticas vai além da simples criação de produtos; buscamos transformar cada vela em uma verdadeira experiência sensorial. Especializados em velas de alta qualidade, utilizamos ingredientes premium, como cera vegetal e óleos essenciais cuidadosamente selecionados, para garantir uma queima limpa e prolongada, que realce a fragrância e proporcione momentos de relaxamento.
-
-          Cada vela é desenvolvida com dedicação, pensando no poder do aroma para elevar o ambiente, proporcionando aconchego, bem-estar e tranquilidade. Acreditamos que uma boa fragrância tem o poder de transformar o espaço, tornando-o mais acolhedor e criando uma atmosfera de calma e serenidade.
+         SEJAM BEM VINDOS
         </p>
     </div>
 
     <!-- Galeria de imagens das velas -->
-    <div class="velasft"> <!-- Container da galeria de imagens das velas -->
-        <ul>
-            <li><img src="./img/fotovela1.jpg" alt="Imagem 1"></li>
-            <li><img src="./img/Canva1.png" alt="Imagem 2"></li>
-            <li><img src="./img/fotovela3.jpg" alt="Imagem 3"></li>
-            <li><img src="./img/Canva2 (2).png" alt="Imagem 4"></li>
-        </ul>
-    </div>
+  
 
     <!-- Seção de Destaques com Ícones -->
 <section class="destaques">
@@ -90,6 +60,15 @@
     </div>
   </div>
 </section>
+
+<div class="velasft"> <!-- Container da galeria de imagens das velas -->
+  <ul>
+      <li><img src="./img/fotovela1.jpg" alt="Imagem 1"></li>
+      <li><img src="./img/Canva1.png" alt="Imagem 2"></li>
+      <li><img src="./img/fotovela3.jpg" alt="Imagem 3"></li>
+      <li><img src="./img/Canva2 (2).png" alt="Imagem 4"></li>
+  </ul>
+</div>
 
 <!-- Seção de Depoimentos de Clientes -->
 <section class="depoimentos">
