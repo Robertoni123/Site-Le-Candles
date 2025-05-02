@@ -1,78 +1,78 @@
+/* Estilos Gerais */
 body {
-  font-family: Arial, sans-serif; /* Fonte original */
-  background-color: #fff;
-  line-height: 1.5;
-  padding: 35px;
-  
+    font-family: Arial, sans-serif; /* Fonte original */
+    background-color: #fff;
+    line-height: 1.5;
+    padding: 35px;
 }
 
 /* Estilo para a navbar */
 .navbar {
-  background-color: #D4C0A1; 
-  padding: 15px 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #D4C0A1;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #4E2A1C; 
-  text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4E2A1C;
+    text-decoration: none;
 }
 
 .navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .navbar-links li {
-  display: inline;
+    display: inline;
 }
 
 .navbar-links a {
-  text-decoration: none;
-  color: #4E2A1C; 
-  font-size: 1.1rem;
-  padding: 5px 10px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  border-radius: 5px;
+    text-decoration: none;
+    color: #4E2A1C;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 /* Hover da Navbar */
 .navbar-links a:hover {
-  background-color: #A17C57; 
-  color: #fff;
+    background-color: #A17C57;
+    color: #fff;
 }
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
-  .navbar-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .navbar-links {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-  }
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
 
-  .navbar-links a {
-      padding: 10px 15px;
-  }
+    .navbar-links a {
+        padding: 10px 15px;
+    }
 }
 
-/* Seção de produtos com rolagem horizontal */
-.choco-container, .acessorios-container {
+/* Seções de produtos com rolagem horizontal */
+.choco-container, .acessorios-container, .outono-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,7 +122,6 @@ body {
 
 .card-content {
     padding: 15px;
-
 }
 
 .card-title {
@@ -139,17 +138,17 @@ body {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border: 2px solid #d4af37; 
+    border: 2px solid #d4af37;
 }
 
 /* MEDIA QUERY: adapta para telas menores */
 @media (max-width: 768px) {
-    .choco, .acessorios {
+    .choco, .acessorios, .outono {
         gap: 10px;
     }
 
     .card {
-        min-width: 200px; 
+        min-width: 200px;
         max-width: 250px;
     }
 
@@ -165,4 +164,3 @@ body {
         font-size: 0.9rem;
     }
 }
-
